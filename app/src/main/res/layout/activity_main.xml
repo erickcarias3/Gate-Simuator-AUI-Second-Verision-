@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+
+    <com.logisim.logicgate.Sketcher
+        android:id="@+id/sketcher"
+        android:layout_width="0dp"
+        android:layout_height="480dp"
+        android:tag="Sketcher"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/addTool"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="790dp"
+        android:layout_marginRight="790dp"
+        android:onClick="showPopup"
+        android:text="ToolBox"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sketcher"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="3dp"
+        android:onClick="showPopup"
+        android:text="Save"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/loadButton"
+        app:layout_constraintTop_toBottomOf="@+id/sketcher"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/loadButton"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="3dp"
+        android:onClick="showPopup"
+        android:text="Load"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/wireButton"
+        app:layout_constraintTop_toBottomOf="@+id/sketcher"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/wireButton"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="3dp"
+        android:text="Wire"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/addTool"
+        app:layout_constraintTop_toBottomOf="@+id/sketcher"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="3dp"
+        android:text="Start"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/saveButton"
+        app:layout_constraintTop_toBottomOf="@+id/sketcher"
+        tools:ignore="HardcodedText" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
